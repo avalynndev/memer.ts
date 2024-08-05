@@ -1,6 +1,6 @@
 {
   "name": "memer.ts",
-  "version": "4.0.2",
+  "version": "4.0.4",
   "description": "An Image Manipulation API With More than 50+ commands. ReWriten in typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,11 +8,21 @@
     "build": "tsc",
     "start": "ts-node src/index.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:avalynndev/memer.ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avalynndev/memer.ts/issues"
+  },
   "author": "avalynndev",
   "license": "GPL-3.0",
   "dependencies": {
-    "canvas": "^2.11.2",
+    "@napi-rs/canvas": "^0.1.53",
     "fs": "^0.0.1-security"
+  },
+  "directories": {
+    "test": "tests"
   },
   "keywords": [
     "memerapi",
