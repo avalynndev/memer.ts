@@ -36,6 +36,4 @@ createImageFile();
 
 ## Credits
 Image Gen: [Link!](https://github.com/DankMemer/imgen)<br/>
-Wrapper: [Based from Snowflake's Api Wrapper](https://github.com/DevSnowflake/dankmemer.js#readme)<br/>
-Made by: [@avalynndev](https://github.com/avalynndev)<br/>
-Made by: [@Yash094](https://github.com/Yash094)
+Made by: [@avalynndev](https://github.com/avalynndev), [@Yash094](https://github.com/Yash094)
