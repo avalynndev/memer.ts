@@ -10,12 +10,12 @@ import fs from "fs/promises";
 import { disability } from "memer.ts";
 
 async function createImageFile() {
-		const avatarUrl = "AvatarURL";
-		const buffer = await disability(avatarUrl);
+	const avatarUrl = "AvatarURL";
+	const buffer = await disability(avatarUrl);
 
-		// Write the buffer to a file called image.png
-		await fs.writeFile("image.png", buffer);
-		console.log("Image file created successfully.");
+	// Write the buffer to a file called image.png
+	await fs.writeFile("image.png", buffer);
+	console.log("Image file created successfully.");
 }
 
 createImageFile();
