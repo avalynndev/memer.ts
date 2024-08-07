@@ -1,6 +1,6 @@
 {
   "name": "memer.ts",
-  "version": "4.0.5",
+  "version": "4.0.6",
   "description": "An Image Manipulation API With More than 50+ commands. ReWriten in typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,7 +19,8 @@
   "license": "GPL-3.0",
   "dependencies": {
     "@napi-rs/canvas": "^0.1.53",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "memer.ts": "^4.0.6"
   },
   "directories": {
     "test": "tests"
