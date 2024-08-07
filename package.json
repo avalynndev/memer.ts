@@ -1,6 +1,6 @@
 {
   "name": "memer.ts",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "An Image Manipulation API With More than 50+ commands. ReWriten in typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
