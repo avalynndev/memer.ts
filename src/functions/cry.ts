@@ -37,8 +37,8 @@ export async function cry(text: string): Promise<Buffer> {
 		ctx.font = "bold 25px ComicSans";
 		ctx.fillStyle = "#000000";
 
-		const maxWidth = 200;
-		const x = 382;
+		const maxWidth = 198;
+		const x = 370;
 		const y = 80;
 
 		wrapText(ctx, text, x, y, maxWidth, 30);
