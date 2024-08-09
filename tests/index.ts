@@ -1,10 +1,10 @@
 import fs from "fs/promises";
-import { disability, cry, youtube, excuseme } from "../src/index";
+import { disability, cry, youtube, humanity } from "../src/index";
 
 async function createImageFile() {
 	try {
-		const buffer = await excuseme(
-			"Hello, this is a test message for the excuseme function."
+		const buffer = await humanity(
+			"Hello, this is a test message for the humanity function."
 		);
 
 		// Write the buffer to a file called image.png
