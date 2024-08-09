@@ -45,7 +45,7 @@ export async function cry(text: string): Promise<Buffer> {
 		const x = 370;
 		const y = 80;
 
-		wrapText(ctx, text, x, y, maxWidth, 30, "center");
+		wrapText(ctx, text, x, y, maxWidth, 30, Infinity, "center");
 
 		return canvas.toBuffer("image/png");
 	} catch (error) {
