@@ -1,47 +1,46 @@
 {
-  "name": "memer.ts",
-  "version": "4.0.6",
-  "description": "An Image Manipulation API With More than 50+ commands. ReWriten in typescript",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsc",
-    "start": "ts-node src/index.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:avalynndev/memer.ts.git"
-  },
-  "bugs": {
-    "url": "https://github.com/avalynndev/memer.ts/issues"
-  },
-  "author": "avalynndev",
-  "license": "GPL-3.0",
-  "dependencies": {
-    "@napi-rs/canvas": "^0.1.53",
-    "fs": "^0.0.1-security",
-    "memer.ts": "^4.0.6"
-  },
-  "directories": {
-    "test": "tests"
-  },
-  "keywords": [
-    "memerapi",
-    "memer.ts",
-    "memer-api",
-    "memerapi.js",
-    "image-meme",
-    "memes",
-    "discord",
-    "discord.js-meme",
-    "image-memer",
-    "meme imgen",
-    "memer image manipulation"
-  ],
-  "devDependencies": {
-    "@types/node": "^22.1.0",
-    "eslint": "^6.8.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
-  }
+	"name": "memer.ts",
+	"version": "4.0.6",
+	"description": "An Image Manipulation API With More than 50+ commands. ReWriten in typescript",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:avalynndev/memer.ts.git"
+	},
+	"bugs": {
+		"url": "https://github.com/avalynndev/memer.ts/issues"
+	},
+	"author": "avalynndev",
+	"license": "GPL-3.0",
+	"dependencies": {
+		"@napi-rs/canvas": "^0.1.53",
+		"fs": "^0.0.1-security",
+		"memer.ts": "^4.0.6"
+	},
+	"directories": {
+		"test": "tests"
+	},
+	"keywords": [
+		"memerapi",
+		"memer.ts",
+		"memer-api",
+		"memerapi.js",
+		"image-meme",
+		"memes",
+		"discord",
+		"discord.js-meme",
+		"image-memer",
+		"meme imgen",
+		"memer image manipulation"
+	],
+	"devDependencies": {
+		"@types/node": "^22.1.0",
+		"eslint": "^6.8.0",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.5.4"
+	}
 }
