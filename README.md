@@ -36,4 +36,4 @@ createImageFile();
 
 ## Credits
 Image Gen: [Link!](https://github.com/DankMemer/imgen)<br/>
-Made by: [@avalynndev](https://github.com/avalynndev), [@Yash094](https://github.com/Yash094)
+Made by: [@avalynndev](https://github.com/avalynndev), [@Yash094](https://github.com/Yash094), [@codeblitz97](https://github.com/codeblitz97)
