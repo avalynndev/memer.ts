@@ -1,5 +1,5 @@
 import fs from "fs/promises";
-import { disability, cry } from "../src/index"; // Adjust the path as needed
+import { cry } from "../src/index";
 
 async function createImageFile() {
 	try {

@@ -1,5 +1,5 @@
 const fs = require("fs").promises;
-const { disability } = require( "memer.ts"); // Adjust the path as needed
+const { disability } = require( "memer.ts");
 
 async function createImageFile() {
 	try {
