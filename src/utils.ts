@@ -5,11 +5,13 @@ export function wrapText(
 	y: number,
 	maxWidth: number,
 	lineHeight: number,
+	maxHeight: number = Infinity,
 	align: "center" | "start" | "end" = "start"
 ) {
 	const words = text.split(" ");
 	let line = "";
 	const lines: string[] = [];
+	let totalHeight = 0;
 
 	for (let n = 0; n < words.length; n++) {
 		const testLine = line + words[n] + " ";
@@ -19,14 +21,19 @@ export function wrapText(
 		if (testWidth > maxWidth && n > 0) {
 			lines.push(line.trim());
 			line = words[n] + " ";
+			totalHeight += lineHeight;
+			if (totalHeight + lineHeight > maxHeight) {
+				break;
+			}
 		} else {
 			line = testLine;
 		}
 	}
 	lines.push(line.trim());
 
-	for (let i = 0; i < lines.length; i++) {
-		const lineWidth = ctx.measureText(lines[i]).width;
+	totalHeight = 0;
+	for (const element of lines) {
+		const lineWidth = ctx.measureText(element).width;
 		let xPos = x;
 
 		if (align === "center") {
@@ -35,6 +42,10 @@ export function wrapText(
 			xPos = x + maxWidth - lineWidth;
 		}
 
-		ctx.fillText(lines[i], xPos, y + i * lineHeight);
+		if (totalHeight + lineHeight > maxHeight) {
+			break;
+		}
+		ctx.fillText(element, xPos, y + totalHeight);
+		totalHeight += lineHeight;
 	}
 }
