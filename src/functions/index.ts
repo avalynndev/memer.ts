@@ -9,3 +9,7 @@ export { excuseme } from "./excuseme";
 export { humanity } from "./humanity";
 export { trash } from "./trash";
 export { satan } from "./satan";
+export { idelete } from "./idelete";
+export { hitler } from "./hitler";
+export { jail } from "./jail";
+export { roblox } from "./roblox";
