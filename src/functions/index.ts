@@ -7,3 +7,5 @@ export { egg } from "./egg";
 export { youtube } from "./youtube";
 export { excuseme } from "./excuseme";
 export { humanity } from "./humanity";
+export { trash } from "./trash";
+export { satan } from "./satan"
