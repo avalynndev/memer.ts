@@ -1,9 +1,11 @@
 import fs from "fs/promises";
-import { cry } from "../src/index";
+import { disability, cry, youtube, humanity } from "../src/index";
 
 async function createImageFile() {
 	try {
-		const buffer = await cry("Nah, I would drink soda");
+		const buffer = await humanity(
+			"Humanity is destroyed and cannot be gained again."
+		);
 
 		// Write the buffer to a file called image.png
 		await fs.writeFile("image.png", buffer);

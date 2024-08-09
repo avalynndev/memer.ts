@@ -29,19 +29,23 @@ export async function cry(text: string): Promise<Buffer> {
 		);
 		const canvas = createCanvas(626, 768);
 		const ctx = canvas.getContext("2d");
-		const image = await loadImage(
+
+		const img = await fetch(
 			"https://raw.githubusercontent.com/DankMemer/imgen/master/assets/cry/cry.bmp"
 		);
+		const buffer = await img.arrayBuffer();
+
+		const image = await loadImage(buffer);
 
 		ctx.drawImage(image, 0, 0, 626, 768);
 		ctx.font = "bold 25px ComicSans";
 		ctx.fillStyle = "#000000";
 
-		const maxWidth = 200;
-		const x = 382;
+		const maxWidth = 198;
+		const x = 370;
 		const y = 80;
 
-		wrapText(ctx, text, x, y, maxWidth, 30);
+		wrapText(ctx, text, x, y, maxWidth, 30, Infinity, "center");
 
 		return canvas.toBuffer("image/png");
 	} catch (error) {

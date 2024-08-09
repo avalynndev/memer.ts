@@ -4,5 +4,8 @@ export { cry } from "./cry";
 export { door } from "./door";
 export { failure } from "./failure";
 export { egg } from "./egg";
+export { youtube } from "./youtube";
+export { excuseme } from "./excuseme";
+export { humanity } from "./humanity";
 export { trash } from "./trash";
-export { satan } from "./satan"
+export { satan } from "./satan";
