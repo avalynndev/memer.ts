@@ -21,7 +21,7 @@ export async function humanity(text: string): Promise<Buffer> {
 		ctx.fillStyle = "#000000";
 
 		const maxWidth = 195;
-		const lineHeight = 50;
+		const lineHeight = 30;
 
 		wrapText(ctx, text, 455, 469, maxWidth, lineHeight);
 

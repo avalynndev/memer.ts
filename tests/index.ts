@@ -4,7 +4,7 @@ import { disability, cry, youtube, humanity } from "../src/index";
 async function createImageFile() {
 	try {
 		const buffer = await humanity(
-			"Hello, this is a test message for the humanity function."
+			"Humanity is destroyed and cannot be gained again."
 		);
 
 		// Write the buffer to a file called image.png
