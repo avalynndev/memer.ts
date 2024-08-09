@@ -4,7 +4,8 @@ export function wrapText(
 	x: number,
 	y: number,
 	maxWidth: number,
-	lineHeight: number
+	lineHeight: number,
+	align: "center" | "start" | "end" = "start"
 ) {
 	const words = text.split(" ");
 	let line = "";
@@ -26,7 +27,14 @@ export function wrapText(
 
 	for (let i = 0; i < lines.length; i++) {
 		const lineWidth = ctx.measureText(lines[i]).width;
-		const xPos = x + (maxWidth - lineWidth) / 2;
+		let xPos = x;
+
+		if (align === "center") {
+			xPos = x + (maxWidth - lineWidth) / 2;
+		} else if (align === "end") {
+			xPos = x + maxWidth - lineWidth;
+		}
+
 		ctx.fillText(lines[i], xPos, y + i * lineHeight);
 	}
 }
