@@ -3,7 +3,7 @@ import { wrapText } from "../utils";
 
 export async function humanity(text: string): Promise<Buffer> {
 	if (!text)
-		return Promise.reject(new Error("You are missing the Avatar URL"));
+		return Promise.reject(new Error("You are missing the Text"));
 
 	if (text.length > 160)
 		return Promise.reject(
@@ -29,7 +29,7 @@ export async function humanity(text: string): Promise<Buffer> {
 	} catch (error) {
 		return Promise.reject(
 			new Error(
-				`Failed to generate dab image: ${
+				`Failed to generate humanity image: ${
 					error instanceof Error ? error.message : String(error)
 				}`
 			)

@@ -14,3 +14,4 @@ export { hitler } from "./hitler";
 export { jail } from "./jail";
 export { roblox } from "./roblox";
 export { stonks } from "./stonks";
+export { vr } from "./vr";

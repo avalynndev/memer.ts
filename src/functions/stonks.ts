@@ -3,7 +3,7 @@ import { wrapText } from "../utils";
 
 export async function stonks(text: string): Promise<Buffer> {
 	if (!text)
-		return Promise.reject(new Error("You are missing the Avatar URL"));
+		return Promise.reject(new Error("You are missing the Text"));
 
 	if (text.length > 100)
 		return Promise.reject(
@@ -28,7 +28,7 @@ export async function stonks(text: string): Promise<Buffer> {
 	} catch (error) {
 		return Promise.reject(
 			new Error(
-				`Failed to generate dab image: ${
+				`Failed to generate stonks image: ${
 					error instanceof Error ? error.message : String(error)
 				}`
 			)

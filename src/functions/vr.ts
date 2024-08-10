@@ -1,9 +1,8 @@
-import { createCanvas, loadImage, GlobalFonts } from "@napi-rs/canvas";
-import path from "path";
+import { createCanvas, loadImage } from "@napi-rs/canvas";
 
 import { wrapText } from "../utils";
 
-export async function cry(text: string): Promise<Buffer> {
+export async function vr(text: string): Promise<Buffer> {
 	if (!text)
 		return Promise.reject(new Error("You are missing the Text"));
 
@@ -16,42 +15,30 @@ export async function cry(text: string): Promise<Buffer> {
 		);
 
 	try {
-		GlobalFonts.registerFromPath(
-			path.join(
-				__dirname,
-				"..",
-				"..",
-				"assets",
-				"fonts",
-				"ComicSansMS3.ttf"
-			),
-			"ComicSans"
-		);
-		const canvas = createCanvas(626, 768);
+		const canvas = createCanvas(680, 670);
 		const ctx = canvas.getContext("2d");
 
 		const img = await fetch(
-			"https://raw.githubusercontent.com/DankMemer/imgen/master/assets/cry/cry.bmp"
+			"https://raw.githubusercontent.com/DankMemer/imgen/master/assets/vr/vr.bmp"
 		);
 		const buffer = await img.arrayBuffer();
 
 		const image = await loadImage(buffer);
 
-		ctx.drawImage(image, 0, 0, 626, 768);
-		ctx.font = "bold 25px ComicSans";
+        ctx.drawImage(image, 0, 0, 680, 670);
+		ctx.font = "16px Poppins";
 		ctx.fillStyle = "#000000";
 
-		const maxWidth = 198;
-		const x = 370;
-		const y = 80;
+		const maxWidth = 155;
+		const lineHeight = 30;
 
-		wrapText(ctx, text, x, y, maxWidth, 30, Infinity, "center");
+		wrapText(ctx, text, 80, 485, maxWidth, lineHeight);
 
 		return canvas.toBuffer("image/png");
 	} catch (error) {
 		return Promise.reject(
 			new Error(
-				`Failed to generate cry image: ${
+				`Failed to generate vr image: ${
 					error instanceof Error ? error.message : String(error)
 				}`
 			)

@@ -15,6 +15,7 @@ import {
 	stonks,
 	trash,
 	youtube,
+	vr,
 } from "./functions";
 
 class Memer {
@@ -34,6 +35,7 @@ class Memer {
 	public stonks = stonks;
 	public trash = trash;
 	public youtube = youtube;
+	public vr = vr;
 }
 
 export { Memer };
