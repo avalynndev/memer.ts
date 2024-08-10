@@ -12,6 +12,7 @@ import {
 	jail,
 	roblox,
 	satan,
+	stonks,
 	trash,
 	youtube,
 } from "./functions";
@@ -30,6 +31,7 @@ class Memer {
 	public jail = jail;
 	public roblox = roblox;
 	public satan = satan;
+	public stonks = stonks;
 	public trash = trash;
 	public youtube = youtube;
 }

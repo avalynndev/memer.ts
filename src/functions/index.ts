@@ -13,3 +13,4 @@ export { idelete } from "./idelete";
 export { hitler } from "./hitler";
 export { jail } from "./jail";
 export { roblox } from "./roblox";
+export { stonks } from "./stonks";
