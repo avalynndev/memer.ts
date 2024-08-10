@@ -1,12 +1,12 @@
 import { createCanvas, loadImage } from "@napi-rs/canvas";
-
 import { wrapText } from "../utils";
 
 export async function vr(
 	text: string,
-	isBuffer: boolean | true
+	isBuffer?: boolean
 ): Promise<Buffer | string> {
 	if (!text) return Promise.reject(new Error("You are missing the Text"));
+	const returnBuffer = isBuffer ?? true;
 
 	if (typeof text !== "string")
 		return Promise.reject(new TypeError("Text must be a string"));
@@ -36,7 +36,7 @@ export async function vr(
 
 		wrapText(ctx, text, 80, 485, maxWidth, lineHeight);
 
-		if (isBuffer) return canvas.toBuffer("image/png");
+		if (returnBuffer) return canvas.toBuffer("image/png");
 		else return canvas.toDataURL("image/png").split(",")[1];
 	} catch (error) {
 		return Promise.reject(
