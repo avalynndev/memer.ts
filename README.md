@@ -23,12 +23,9 @@ Memer.ts Documentation
 `Memer.ts` is a versatile npm package for easy image manipulation in TypeScript and JavaScript. 
 It allows you to add text, apply filters, resize images, and more, all with a simple and efficient API that supports various image formats. 
 
+<br/>
 
-## Images
-
-<div style="text-align: left;">
-  <img src="" alt="Banner" style="max-width: 70%;" >
-</div>
+![image](https://github.com/user-attachments/assets/0267d5a3-d6b1-4261-a2ca-cb76062ef3a7)
 
 ### Installation
 
