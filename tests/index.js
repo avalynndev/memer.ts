@@ -1,11 +1,13 @@
 const fs = require("fs").promises;
-const { jail } = require( "memer.ts");
+const { Memer } = require("memer.ts");
+
+const memer = new Memer();
 
 async function createImageFile() {
 	try {
 		const avatarUrl =
-			"https://cdn.discordapp.com/avatars/887939910177275905/816909b74b25a66ec455e5143ff8e8ff.png";
-		const buffer = await jail(avatarUrl);
+			"How do i code lmao?";
+		const buffer = await memer.vr(avatarUrl);
 
 		// Write the buffer to a file called image.png
 		await fs.writeFile("image.png", buffer);

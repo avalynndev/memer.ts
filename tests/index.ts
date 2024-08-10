@@ -1,9 +1,11 @@
 import fs from "fs/promises";
-import { stonks } from "../src/functions";
+import { Memer } from "memer.ts";
+
+const memer = new Memer()
 
 async function createImageFile() {
 	try {
-		const buffer = await stonks("UP.");
+		const buffer = await memer.stonks("UP.");
 
 		// Write the buffer to a file called image.png
 		await fs.writeFile("image.png", buffer);
