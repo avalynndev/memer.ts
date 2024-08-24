@@ -13,7 +13,7 @@ Memer.ts Documentation
 </p>
 
 <p align="center">
-  <a href="https://enjoytown.netlify.app" target="_blank">
+  <a href="https://memer-ts.vercel.app" target="_blank">
     <img src="https://github.com/avalynndev/memer.ts-docs/blob/main/app/favicon.ico?raw=true" alt="Logo" width="50"/>
   </a>
 </p>

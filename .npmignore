@@ -1,3 +1,6 @@
 tests
+src
 .github
+.prettierrc
+tsconfig.json
 .prettierrc
