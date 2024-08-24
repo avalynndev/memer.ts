@@ -1,6 +1,6 @@
 {
 	"name": "memer.ts",
-	"version": "4.2.6",
+	"version": "4.2.1",
 	"description": "An Image Manipulation API With More than 50+ commands. ReWriten in typescript",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -9,16 +9,15 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+ssh://git@github.com/avalynndev/memer.ts.git"
+		"url": "git@github.com:avalynndev/memer.ts.git"
 	},
 	"bugs": {
-		"url": "https://memer-ts.vercel.app"
+		"url": "https://github.com/avalynndev/memer.ts/issues"
 	},
 	"author": "avalynndev",
 	"license": "GPL-3.0",
 	"dependencies": {
 		"@napi-rs/canvas": "^0.1.53",
-		"canvas": "^2.11.2",
 		"fs": "^0.0.1-security",
 		"memer.ts": "^4.2.1"
 	},
